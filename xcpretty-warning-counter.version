@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Version BuildValueType="FullDate">
+  <Files>
+    <File>xcpretty-warning-counter.gemspec</File>
+    <File>Rakefile</File>
+  </Files>
+  <Tags>
+    <Major>1</Major>
+    <Minor>0</Minor>
+    <Patch>0</Patch>
+    <Build>20160304</Build>
+    <Revision>0</Revision>
+    <TimeZone>US/Pacific</TimeZone>
+    <StartYear>2015</StartYear>
+    <Company>John Lyon-Smith</Company>
+    <Product>XCPretty Warning Counter</Product>
+    <Copyright>Copyright (c) 2016, John Lyon-Smith</Copyright>
+  </Tags>
+</Version>

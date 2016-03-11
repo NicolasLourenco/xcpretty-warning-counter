@@ -20,4 +20,6 @@ xcodebuild | xcpretty -f `xcpretty-warning-counter`
 
 ## How it works
 
-The `--formatter` option takes a file path as an argument, which is returned by the `xcpretty-travis-formatter` binary. It must be evaluated before the xcpretty arguments are evaluated, hence the backtick wrapping. The specified file must return a Ruby subclass of `XCPretty::Formatter`, which will then receive `formatter_*` method invocations as the build output is parsed.
+The `--formatter` option takes a file path as an argument, so the `xcpretty-warning-counter` script returns the location of the installed Ruby formatter class. It must be evaluated before the xcpretty arguments are evaluated, hence the backtick wrapping. The Ruby script must return a Ruby class that is a subclass of `XCPretty::Formatter`.  This then receives `formatter_*` method invocations as the build output is parsed.  
+
+I use the start of the tests as the indicator for when to write the warning file, so this formatter only works for with the `tests` argument of `xcodebuild`.

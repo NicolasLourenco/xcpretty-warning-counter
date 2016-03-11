@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "json", "~> 1.8"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
-  s.add_development_dependency('code-tools', '~> 5.0')
+  spec.add_development_dependency('code-tools', '~> 5.0')
 end

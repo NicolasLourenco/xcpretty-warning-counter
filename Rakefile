@@ -1,7 +1,7 @@
 task :default => :test
 
 VERSION = '1.0.0'
-BUILD = '20160304.0'
+BUILD = '20160310.0'
 
 task :vamper do
   `vamper -u`

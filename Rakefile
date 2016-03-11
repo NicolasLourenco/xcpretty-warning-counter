@@ -2,6 +2,7 @@ task :default => :test
 
 VERSION = '1.0.0'
 BUILD = '20160310.0'
+TOOL = 'xcpretty-warning-counter'
 
 task :vamper do
   `vamper -u`
@@ -15,7 +16,7 @@ task :release do
   puts "Pushing tags to GitHub..."
   `git push --follow-tags`
   `rm *.gem`
-  `gem build app-tools.gemspec`
+  `gem build #{TOOL}.gemspec`
   puts "Pushing gem..."
-  `gem push app-tools-#{VERSION}.gem`
+  `gem push #{TOOL}-#{VERSION}.gem`
 end

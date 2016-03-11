@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = "~> 2.0"
   spec.files         = [
   	"README.md",
-  	"LICENSE",
+  	"LICENSE.md",
   	"lib/warning_counter.rb",
   	"bin/xcpretty-warning-counter"
   ]

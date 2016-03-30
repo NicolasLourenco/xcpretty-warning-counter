@@ -1,4 +1,5 @@
 require 'json'
+require 'psych'
 
 class WarningCounter < XCPretty::Simple
   def initialize(use_unicode, colorize)
@@ -24,6 +25,9 @@ class WarningCounter < XCPretty::Simple
   def format_test_summary(message, failures_per_suite)
     File.open('warning-count.json', 'w') { |io|
       io.write JSON.generate(:warning_count => @warning_count)
+    }
+    File.open('warning-count.yaml', 'w') { |io|
+      io.write Psych.dump('warning_count' => @warning_count)
     }
     super
   end

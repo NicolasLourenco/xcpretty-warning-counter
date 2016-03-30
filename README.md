@@ -1,6 +1,6 @@
 # XCPretty Warning Counter
 
-A custom formatter for [xcpretty](https://github.com/supermarin/xcpretty) that counts warnings and outputs them in JSON and YAML format in a files named `warning-counts.json` and `warning-counts.yaml` respectively
+A custom formatter for [xcpretty](https://github.com/supermarin/xcpretty) that counts warnings and outputs them in JSON and YAML format in files named `warning-counts.json` and `warning-counts.yaml` respectively
 
 ## Installation
 

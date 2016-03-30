@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "xcpretty-warning-counter"
-  spec.version       = "1.0.0"
+  spec.version       = "1.1.0"
   spec.authors       = ["John Lyon-Smith"]
   spec.email         = ["john@jamoki.com"]
   spec.description   =

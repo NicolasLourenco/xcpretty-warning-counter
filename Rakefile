@@ -1,7 +1,7 @@
 task :default => :test
 
-VERSION = '1.0.0'
-BUILD = '20160330.0'
+VERSION = '1.1.0'
+BUILD = '20160330.1'
 TOOL = 'xcpretty-warning-counter'
 
 task :vamper do

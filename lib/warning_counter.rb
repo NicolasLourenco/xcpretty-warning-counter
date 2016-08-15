@@ -4,6 +4,7 @@ require 'psych'
 class WarningCounter < XCPretty::Simple
   def initialize(use_unicode, colorize)
     super
+    @warnings_hash = Set.new()
     @warning_count = 0
   end
 
@@ -18,7 +19,11 @@ class WarningCounter < XCPretty::Simple
   end
 
   def format_compile_warning(file_name, file_path, reason, line, cursor)
-    @warning_count += 1
+    key = "#{file_path}:#{reason}:#{line}:#{cursor}"
+    if not @warnings_hash.include?(key) 
+      @warnings_hash.add(key)
+      @warning_count += 1
+    end  
     super
   end
 

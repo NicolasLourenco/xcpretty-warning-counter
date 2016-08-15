@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    xcpretty-warning-counter (1.0.0)
+    xcpretty-warning-counter (1.1.0)
       json (~> 1.8)
       xcpretty (~> 0.2, >= 0.0.7)
 
@@ -36,4 +36,4 @@ DEPENDENCIES
   xcpretty-warning-counter!
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

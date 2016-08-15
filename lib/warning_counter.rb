@@ -19,7 +19,7 @@ class WarningCounter < XCPretty::Simple
   end
 
   def format_compile_warning(file_name, file_path, reason, line, cursor)
-    key = "#{file_path}:#{reason}:#{line}:#{cursor}"
+    key = "#{file_path}:#{reason}:#{line}"
     if not @warnings_hash.include?(key) 
       @warnings_hash.add(key)
       @warning_count += 1
